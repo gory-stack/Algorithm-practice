@@ -66,3 +66,115 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+==========================================
+# 1. Secrets and credentials
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.secret
+id_rsa
+id_ed25519
+credentials.json
+google-services.json
+GoogleService-Info.plist
+secrets/
+.aws/
+*.tfstate
+*.tfstate.*
+*.sql
+*.sqlite
+*.db
+
+# ==========================================
+# 2. Editors & IDEs
+# ==========================================
+# VS Code
+.vscode/
+
+# JetBrains (IntelliJ, WebStorm, PyCharm 등)
+.idea/
+*.iml
+
+
+.cursor/
+.eslintcache
+.prettiercache
+
+# ==========================================
+# 3. OS generated file
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# 4. Logs and Temporary files
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+coverage/
+.pytest_cache/
+
+build/
+.next/
+out/
+.turbo/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Java / Spring
+target/
+.gradle/
+
+# Additional credentials and configuration
+.ssh/
+.kube/
+.docker/
+.gnupg/
+.azure/
+.gcloud/
+.config/gcloud/
+
+# Credential files
+.git-credentials
+.netrc
+.npmrc
+.pypirc
+
+# Additional certificates
+*.crt
+*.cer
+*.der
+
+# Terraform sensitive files
+*.tfvars
+*.tfvars.json
+.terraform/
